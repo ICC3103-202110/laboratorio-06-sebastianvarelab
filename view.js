@@ -4,6 +4,10 @@ const inquirer = require('inquirer');
 const { initModel } = require('./model');
 
 function inputForm(model){
+    const { leftValue } =model
+    const { leftUnit } =model
+    const { rightUnit } =model
+    const { rightValue} =model
     return inquirer.prompt([
         {
             name: 'left_temperature',
